@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+#root {
+    display: block;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.content {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content table {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+/* .content:nth-child(even){background-color: #000;} */
+
+.content td, .content th {
+    border: 1px solid transparent;
+    padding: 8px;
+}
+
+.content tr:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.content th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+}
+
+/* button{
+    border: none;
+    border-radius: 3px;
+    background: rgb(78, 78, 255);
+    color: #ededed;
+    padding: 3px;
+    font-family: 'Lato', Arial, sans-serif; 
+} */
+
+.content button {
+    border: none;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    background-color: #000;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    padding: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.content button:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+    -moz-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+    box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+    position: relative;
+    top: 6px;
+}
+
+#options>ul {
+    margin-left: 3%;
+}
+
+#header-top {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 9%
+}
+
+#root2 {
+    margin-top: 3%;
+    background: rgb(70, 61, 61);
+    border: 1px solid red;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    box-shadow: 0px 5px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+h2 {
+    margin-left: -5%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(1, 155, 116);
+}
+
+#copy {
+    margin-top: 3%;
+    text-align: center;
+    color: #000;
+}

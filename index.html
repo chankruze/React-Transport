@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Transportation | DEV281x</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component1.css" />
+    <link rel="stylesheet" type="text/css" href="css/transport.css" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- ReactJs CDN open-->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <!-- ReactJs CDN close-->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- ReactJs Part Start -->
+
+    <script type="text/babel">
+
+    function ListItem(props){
+        return <td>{props.item}</td>
+    }
+
+    function CarsList(props){
+	
+        return (
+            <div>
+                <h2>{props.header}</h2>
+                <ul>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Buy</th>
+                        </tr>
+
+                       <tr>
+						<ListItem item = {props.car1[0]}/>
+						<ListItem item = {props.car1[1]}/>
+						<ListItem item = {props.car1[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.car2[0]}/>
+						<ListItem item = {props.car2[1]}/>
+						<ListItem item = {props.car2[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.car3[0]}/>
+						<ListItem item = {props.car3[1]}/>
+						<ListItem item = {props.car3[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+                   </table>
+                </ul>
+            </div>
+        )
+    }
+	    function TrucksList(props){
+	
+        return (
+            <div>
+                <h2>{props.header}</h2>
+                <ul>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Buy</th>
+                        </tr>
+
+                       <tr>
+						<ListItem item = {props.truck1[0]}/>
+						<ListItem item = {props.truck1[1]}/>
+						<ListItem item = {props.truck1[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.truck2[0]}/>
+						<ListItem item = {props.truck2[1]}/>
+						<ListItem item = {props.truck2[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+                   </table>
+                </ul>
+            </div>
+        )
+    }
+	    function ConvertiblesList(props){
+	
+        return (
+            <div>
+                <h2>{props.header}</h2>
+                <ul>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Buy</th>
+                        </tr>
+
+                       <tr>
+						<ListItem item = {props.convertible1[0]}/>
+						<ListItem item = {props.convertible1[1]}/>
+						<ListItem item = {props.convertible1[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.convertible2[0]}/>
+						<ListItem item = {props.convertible2[1]}/>
+						<ListItem item = {props.convertible2[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.convertible3[0]}/>
+						<ListItem item = {props.convertible3[1]}/>
+						<ListItem item = {props.convertible3[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+					   <tr>
+						<ListItem item = {props.convertible4[0]}/>
+						<ListItem item = {props.convertible4[1]}/>
+						<ListItem item = {props.convertible4[2]}/>
+						<td><button>Buy Now</button></td>
+					   </tr>
+					   
+                   </table>
+                </ul>
+            </div>
+        )
+    }
+
+
+    function ShoppingApp(props){
+
+        return (
+            <div>
+                <CarsList header = "Cars" car1 = {[ "2013","A","$3200"]} car2 = {[ "2013","A","$3200"]} car3 = {[ "2013","A","$3200"]}/>
+                <TrucksList header = "Trucks" truck1 = {["2014","D","$18000"]} truck2 = {["2014","D","$18000"]} />
+                <ConvertiblesList header = "Convertibles" convertible1 = {["2009","F","$2000"]} convertible2 = {["2009","F","$2000"]} convertible3 = {["2009","F","$2000"]} convertible4 = {["2009","F","$2000"]}/>
+            </div>
+        )
+    }
+
+    ReactDOM.render(
+        <ShoppingApp/>,
+        document.getElementById("root2")
+    )
+  </script>
+
+    <!-- ReactJs Part End -->
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+            <a class="codrops-icon codrops-icon-prev" onclick="goBack()"><span>Go Back</span></a>
+            <span class="right"><a class="codrops-icon codrops-icon-drop" href="https://geekofia.wordpress.com"><span>GEEKOFIA</span></a></span>
+        </div>
+
+        <div id="header-top">
+            <h1>Welcome to React Transportation</h1>
+            <p>The best place to buy vehicles online</p>
+        </div>
+
+        <div id="root">
+            <div id="options">
+                <h3>Choose Options</h3>
+                <br>
+                <ul>
+                    <li>Only New <input id="tick" type="checkbox" id="coding" name="interest" value="coding" checked/></li>
+                    <br>
+                    <li>Select Type <select>
+                            <option value="All">All</option>
+                            <option value="Cars">Cars</option>
+                            <option value="Trucks">Trucks</option>
+                            <option value="Convertibles">Convertibles</option>
+                        </select></li>
+                </ul>
+                <br>
+            </div>
+
+            <section id="root2" class="content">
+
+                <!-- React Renders Here -->
+
+            </section>
+
+
+            <div class="component">
+                <!-- Start Nav Structure -->
+                <button class="cn-button" id="cn-button">+</button>
+                <div class="cn-wrapper" id="cn-wrapper">
+                    <ul>
+                        <li><a href="#"><span class="icon-picture"></span></a></li>
+                        <li><a href="#"><span class="icon-headphones"></span></a></li>
+                        <li><a href="#"><span class="icon-home"></span></a></li>
+                        <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+                        <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+                    </ul>
+                </div>
+                <div id="cn-overlay" class="cn-overlay"></div>
+                <!-- End Nav Structure -->
+            </div>
+            <div id="copy">Copyright &copy; Chandan Kumar Mandal</div>
+        </div>
+    </div><!-- /container -->
+    <script src="js/polyfills.js"></script>
+    <script src="js/demo1.js"></script>
+
+</body>
+
+</html>
